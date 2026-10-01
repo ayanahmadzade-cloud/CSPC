@@ -1,0 +1,28 @@
+rule all:
+    input:
+        "kinetics.png",
+        "equilibrium.png",
+        "titration.png"
+
+rule run_warmup:
+    script:
+        "warmup.py"
+
+rule run_kinetics:
+    output:
+        "kinetics.csv",
+        "kinetics.png"
+    script:
+        "kinetics.py"
+
+rule run_equilibrium:
+    output:
+        "equilibrium.png"
+    script:
+        "equilibrium.py"
+
+rule run_titration:
+    output:
+        "titration.png"
+    script:
+        "titration.py"
