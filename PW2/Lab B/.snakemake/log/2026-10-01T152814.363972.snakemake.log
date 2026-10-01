@@ -1,0 +1,21 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-10-01 15:28:14
+  Workflow ID: e98a3355-0b15-4f43-9d29-c0c5608faa51
+  Platform: Linux-6.17.0-41-generic-x86_64-with-glibc2.42
+  Host: ufaz-HP-ProBook-4-G1i-16-inch-Notebook-AI-PC
+  User: ufaz
+  Snakemake version: 9.27.0
+  Python version: 3.14.7 | packaged by Anaconda, Inc. | (main, Aug 14 2026, 10:21:40) [GCC 14.3.0]
+  Command: /home/ufaz/miniconda3/bin/snakemake -c1
+  Snakefile: /home/ufaz/Desktop/CSPC/PW2/Lab B/Snakefile
+  Base directory: /home/ufaz/Desktop/CSPC/PW2/Lab B
+  Run directory: /home/ufaz/Desktop/CSPC/PW2/Lab B
+  Working directory: /home/ufaz/Desktop/CSPC/PW2/Lab B
+  Config file(s): []
+  Config MD5: 99914b932bd37a50b983c5e7c90ae93b
+
+Building DAG of jobs...
+Nothing to be done (all requested files are present and up to date).
