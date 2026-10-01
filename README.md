@@ -23,23 +23,10 @@
 - **Bonus Task:** Completed 2D trajectory path analysis and speed calculation over time.
 
 
-# Lab B: Optimization in Chemistry - Results Summary
+## PW2 Lab B - Optimization in Chemistry
 
-## Part 2: Optimization Warmup
-- Successfully tested Gradient Descent, Newton, and SLSQP methods on standard test functions.
-
-## Part 3: Kinetics
-- Reaction rate constant (k): Calculated using SLSQP minimization.
-- Outputs generated: `kinetics.csv` and `kinetics.png`.
-
-## Part 4: Chemical Equilibrium
-- Reaction extent at equilibrium (x): Solved via `root_scalar` (brentq) and SLSQP.
-- Outputs generated: `equilibrium.png`.
-
-## Part 5: Titration Curve
-- Equivalence point volume: 25.0 mL
-- Calculated pH curve using charge balance and `root_scalar`.
-- Outputs generated: `titration.png`.
-
-## Part 6: Automation Workflow
-- Snakemake workflow configured in `Snakefile` to automate the execution of all scripts and figure generation.
+* **Optimization Methods:** Verified Gradient Descent, Newton-Raphson, and SLSQP algorithms on continuous test functions.
+* **Kinetics Model:** Fitted rate constant $k$ using SLSQP minimization and generated corresponding reaction kinetics plots.
+* **Chemical Equilibrium:** Solved nonlinear extent of reaction ($x$) using `root_scalar` (brentq algorithm) and verified via SLSQP.
+* **Titration Analysis:** Modeled strong acid-strong base titration curve using charge balance equation with $V_{eq} = 25.0$ mL.
+* **Snakemake Pipeline:** Automated end-to-end data processing and figure output using `Snakefile`.
