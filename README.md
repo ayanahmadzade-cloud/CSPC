@@ -21,3 +21,25 @@
 - **Noise Observation:** Differentiation amplifies measurement noise because it calculates local differences between adjacent points, causing individual acceleration values to fluctuate significantly despite smooth position data.
 - **Back Integration Results:** Re-integrating the acceleration back to position recovered the original trajectory with a maximum difference of 0.78 m, demonstrating that integration suppresses noise.
 - **Bonus Task:** Completed 2D trajectory path analysis and speed calculation over time.
+
+
+# Lab B: Optimization in Chemistry - Results Summary
+
+## Part 2: Optimization Warmup
+- Successfully tested Gradient Descent, Newton, and SLSQP methods on standard test functions.
+
+## Part 3: Kinetics
+- Reaction rate constant (k): Calculated using SLSQP minimization.
+- Outputs generated: `kinetics.csv` and `kinetics.png`.
+
+## Part 4: Chemical Equilibrium
+- Reaction extent at equilibrium (x): Solved via `root_scalar` (brentq) and SLSQP.
+- Outputs generated: `equilibrium.png`.
+
+## Part 5: Titration Curve
+- Equivalence point volume: 25.0 mL
+- Calculated pH curve using charge balance and `root_scalar`.
+- Outputs generated: `titration.png`.
+
+## Part 6: Automation Workflow
+- Snakemake workflow configured in `Snakefile` to automate the execution of all scripts and figure generation.
