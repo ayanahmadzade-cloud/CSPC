@@ -1,4 +1,4 @@
-## PW1 --- Lab A
+## PW1 Lab A
 
 - **pytest status**: 3/3 tests passed.
 - **Speed comparison (200,000 atoms)**:
@@ -14,7 +14,7 @@
 - **Snakemake Pipeline:** The Snakemake pipeline automates figure generation by monitoring input files and rebuilding `figure.png` only when `decay_observed.csv` or `plot.py` is updated.
 
 
-## PW2 Lab A - Motion from Tracking Data
+## PW2 Lab A 
 
 - **Measured Mean Acceleration:** -8.58 m/s²
 - **Acceleration Standard Deviation:** 28.72 m/s²
@@ -23,7 +23,7 @@
 - **Bonus Task:** Completed 2D trajectory path analysis and speed calculation over time.
 
 
-## PW2 Lab B - Optimization in Chemistry
+## PW2 Lab B 
 
 * **Optimization Methods:** Verified Gradient Descent, Newton-Raphson, and SLSQP algorithms on continuous test functions.
 * **Kinetics Model:** Fitted rate constant $k$ using SLSQP minimization and generated corresponding reaction kinetics plots.
