@@ -30,3 +30,12 @@
 * **Chemical Equilibrium:** Solved nonlinear extent of reaction ($x$) using `root_scalar` (brentq algorithm) and verified via SLSQP.
 * **Titration Analysis:** Modeled strong acid-strong base titration curve using charge balance equation with $V_{eq} = 25.0$ mL.
 * **Snakemake Pipeline:** Automated end-to-end data processing and figure output using `Snakefile`.
+
+
+## PW3
+
+* **Session 1 (Data & Distributions):** Loaded `heart.csv` and checked `age`, `chol`, `trestbps`, and `thalach`. Shapiro-Wilk test showed `thalach`, `chol`, and `trestbps` pass normality, while `age` is non-normal. Saved distribution plots to `distributions.png`.
+* **Session 2 (Heart Rate Difference):** Performed Welch's t-test comparing `thalach` between healthy and disease groups. Found a statistically significant difference (p < 0.001) where healthy patients reach higher max heart rates. Saved plot to `thalach_comparison.png`.
+* **Age vs Heart Rate:** Found a moderate negative Pearson correlation (r = -0.42, p < 0.001) between `age` and `thalach`. Saved scatter plot to `age_vs_thalach.png`.
+* **Chemical Exposure Mystery:** Naive correlation showed strong association between `cadmium` and `malignancy` (~0.85). However, after controlling for `pollution_index` around the median, `benzene` correlation increased to ~0.84 while `cadmium` dropped to ~0.28, proving `benzene` is the true causal driver.
+* **Bonus Task:** Evaluated target class balance (`df['target'].value_counts(normalize=True)`), confirming a well-balanced binary distribution (~54% disease vs ~46% healthy).
