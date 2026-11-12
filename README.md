@@ -39,3 +39,10 @@
 * **Age vs Heart Rate:** Found a moderate negative Pearson correlation (r = -0.42, p < 0.001) between `age` and `thalach`. Saved scatter plot to `age_vs_thalach.png`.
 * **Chemical Exposure Mystery:** Naive correlation showed strong association between `cadmium` and `malignancy` (~0.85). However, after controlling for `pollution_index` around the median, `benzene` correlation increased to ~0.84 while `cadmium` dropped to ~0.28, proving `benzene` is the true causal driver.
 * **Bonus Task:** Evaluated target class balance (`df['target'].value_counts(normalize=True)`), confirming a well-balanced binary distribution (~54% disease vs ~46% healthy).
+
+
+## PW4
+
+* **Session A (Supervised Learning):** Cleaned and explored the Concrete Compressive Strength dataset (`concrete.csv`). Trained Linear Regression, Polynomial Regression, KNN Classifier, and Decision Tree models, evaluating performance using RMSE, MAE, $R^2$, and classification metrics. Saved plots to `figures/`.
+* **Session B (Unsupervised Learning):** Applied PCA and K-Means clustering on the Wine dataset. Evaluated variance explained via scree plots, interpreted cluster centers in real units, and measured cluster agreement against true cultivar labels. Saved outputs to `results/` and `figures/`.
+* **Snakefile Pipeline:** Automated the end-to-end data fetching, modeling, and clustering workflows using a `Snakefile`.
